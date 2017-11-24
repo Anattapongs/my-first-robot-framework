@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171124 16:14:19.617" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/riverpark/workspace_check-in/my-first-robot-framework2/myfirstTest.robot" id="s1" name="myfirstTest">
+<test id="s1-t1" name="Test Site Should Be Displayed">
+<kw type="setup" name="Go To Test Site">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20171124 16:14:19.712" level="INFO">Opening browser 'gc' to base url 'https://robot-stage-1.firebaseapp.com'</msg>
+<status status="PASS" endtime="20171124 16:14:25.310" starttime="20171124 16:14:19.712"></status>
+</kw>
+<status status="PASS" endtime="20171124 16:14:25.310" starttime="20171124 16:14:19.712"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Robot Framework - Stage 1</arg>
+</arguments>
+<msg timestamp="20171124 16:14:25.335" level="INFO">Current page contains text 'Robot Framework - Stage 1'.</msg>
+<status status="PASS" endtime="20171124 16:14:25.335" starttime="20171124 16:14:25.311"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20171124 16:14:25.400" starttime="20171124 16:14:25.336"></status>
+</kw>
+<status status="PASS" endtime="20171124 16:14:25.401" critical="yes" starttime="20171124 16:14:19.711"></status>
+</test>
+<test id="s1-t2" name="Test Site Should Contain Working Link To GitHub">
+<kw type="setup" name="Go To Test Site">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20171124 16:14:25.403" level="INFO">Opening browser 'gc' to base url 'https://robot-stage-1.firebaseapp.com'</msg>
+<status status="PASS" endtime="20171124 16:14:31.053" starttime="20171124 16:14:25.402"></status>
+</kw>
+<status status="PASS" endtime="20171124 16:14:31.054" starttime="20171124 16:14:25.402"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>go_to_github</arg>
+</arguments>
+<msg timestamp="20171124 16:14:31.054" level="INFO">Clicking element 'go_to_github'.</msg>
+<status status="PASS" endtime="20171124 16:14:36.690" starttime="20171124 16:14:31.054"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://github.com/chonla/robotframework-stage-1</arg>
+</arguments>
+<msg timestamp="20171124 16:14:36.695" level="INFO">Current location is 'https://github.com/chonla/robotframework-stage-1'.</msg>
+<status status="PASS" endtime="20171124 16:14:36.696" starttime="20171124 16:14:36.690"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20171124 16:14:36.764" starttime="20171124 16:14:36.698"></status>
+</kw>
+<status status="PASS" endtime="20171124 16:14:36.764" critical="yes" starttime="20171124 16:14:25.401"></status>
+</test>
+<status status="PASS" endtime="20171124 16:14:36.766" starttime="20171124 16:14:19.621"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="myfirstTest" pass="2">myfirstTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
